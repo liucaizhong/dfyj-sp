@@ -1,0 +1,9 @@
+<!--pages/checkin/checkin.wxml-->
+<view class="checkin">
+  <icon class="checkin-icon" type="{{type}}" size="80"></icon>
+  <view class="checkin-desc">
+    <view class="checkin-text">{{desc}}</view>
+    <view wx:if="{{subdesc}}" class="checkin-subtext">{{subdesc}}</view>
+  </view>
+  <button class="checkin-btn" type="primary" bindtap="backToHome">确定</button>
+</view>

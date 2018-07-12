@@ -1,0 +1,69 @@
+/* pages/bindinfo/bindinfo.wxss */
+.content {
+  margin: 15px 0;
+  background: #fff;
+  padding: 0 14px;
+}
+
+.row {
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  padding: 5px 0;
+  border-bottom: 1px solid rgba(226,234,240,1);
+  height: 40px;
+}
+
+.row:last-child {
+  border-bottom: none;
+}
+
+.label {
+  font-size: 14px;
+  width: 35px;
+  text-align: center;
+  line-height: 2;
+  margin-right: 5px;
+}
+
+.input {
+  flex: 1;
+  text-align: right;
+  font-size: 14px;
+  color: #8a8a8a;
+}
+
+.btn-area button {
+  font-size: 14px;
+}
+
+.btn-area {
+  margin-top: 20px;
+  padding: 0 14px;
+}
+
+.submit-btn {
+  margin-bottom: 10px;
+}
+
+.update-btn {
+  width: 100%;
+  height: 40px;
+  background:#fff;
+  font-size:15px;
+  text-align:center;
+  line-height:2.6;
+  color:red;
+}
+
+.auth-btn {
+  margin-bottom: 10px;
+  background: #fff;
+  color: #3498db;
+}
+
+.bindPhone {
+  font-size:13px;
+  margin-right:0;
+}

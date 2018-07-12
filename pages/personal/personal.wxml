@@ -1,0 +1,35 @@
+<!--pages/personal/personal.wxml-->
+<view class="personal__container">
+  <view class="personal__back"></view>
+  <view class="personal__header">
+    <view class="userinfo">
+       <button
+        class="userinfo-avatar"
+        wx:if="{{!hasUserInfo && canIUse}}"
+        open-type="getUserInfo"
+        bindgetuserinfo="getUserInfo"
+      >
+      </button> 
+      <block wx:else> 
+        <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+        <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+      </block> 
+    </view> 
+  </view>
+  <view class="personal__body">
+    <view class="personal__body-content">
+      <navigator class="personal__body-content-row" url="../myactivity/myactivity">
+        <image class="personal__body-content-row-label" src="../../assets/event_note.png"></image>
+        <text class="personal__body-content-row-title">我的活动</text>
+        <text class="personal__body-content-row-extra">{{activityTotal + '个'}}</text>
+        <image class="personal__body-content-row-arrow" src="../../assets/arrow-right.png"></image>
+      </navigator>
+      <navigator class="personal__body-content-row" url="../bindinfo/bindinfo">
+        <image class="personal__body-content-row-label" src="../../assets/phone.png"></image>
+        <text class="personal__body-content-row-title">绑定信息</text>
+        <text class="personal__body-content-row-extra">{{infoStatusToDesc[infoStatus]}}</text>
+        <image class="personal__body-content-row-arrow" src="../../assets/arrow-right.png"></image>
+      </navigator>
+    </view>
+  </view>
+</view>

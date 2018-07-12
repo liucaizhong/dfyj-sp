@@ -1,0 +1,13 @@
+<!--pages/activitylistitem/activitylistitem.wxml-->
+<view class="activitylistitem__container">
+  <view bindtap="navigateToDetail">
+    <view class="activitylistitem__name">{{item.name}}</view>
+    <view class="activitylistitem__address">{{item.address}}</view>
+    <view class="activitylistitem__interval">{{oneDay ? item.start : item.start + ' 至 ' + item.end}}</view>
+  </view>
+  <!-- <view class="activitylistitem__footer"> -->
+    <!-- <view>会议沙龙</view> -->
+    <!-- <view class="activitylistitem__status">{{statusDesc[item.status]}}</view> -->
+    <!-- <view wx:if="{{item.status == 1}}" class="activitylistitem__qrcode" bindtap="showQRCode">参会码</view>  -->
+  <!-- </view> -->
+</view>

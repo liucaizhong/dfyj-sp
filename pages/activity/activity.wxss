@@ -1,0 +1,163 @@
+/* pages/activity/activity.wxss */
+.activity__container {
+  box-sizing: border-box;
+  position: relative;
+  width: 100%;
+  min-height: 100%;
+  overflow-x: hidden;
+  /* padding-bottom: 60px; */
+  flex: 1;
+  padding-bottom: 60px;
+}
+
+.activity__header {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px 15px;
+  background: #fff;
+}
+
+.activity__name {
+  display: block;
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: 15px;
+  font-weight: bold;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.activity__desc {
+  font-size: 13px;
+  color: #8a8a8a;
+}
+
+.activity__plan {
+  display: block;
+  width: 100%;
+  background: #fff;
+  margin-top: 5px;
+  box-sizing: border-box;
+}
+
+.activity__plan-title {
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  height: auto;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 10px 0 10px 15px;
+  border-bottom: .5px solid #dbdbdb;
+}
+
+/* .activity__plan-content {
+  padding: 10px 15px;
+  font-size: 13px;
+  color: #8a8a8a; 
+} */
+
+.activity__plan-image {
+  width: 100%;
+  /* min-height: 500px; */
+}
+
+.activity__address {
+  display: block;
+  width: 100%;
+  background: #fff;
+  margin-top: 5px;
+  box-sizing: border-box;
+}
+
+.activity__address-title {
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  height: auto;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 10px 0 10px 15px;
+  border-bottom: .5px solid #dbdbdb;
+}
+
+.activity__address-content {
+  box-sizing: border-box;
+  padding: 10px 15px;
+  display: flex;
+}
+
+.activity__address-content-left {
+  flex: 1;
+}
+
+.activity__address-content-right {
+  width: 45px;
+  height: 45px;
+  border-left: .5px solid #dbdbdb;
+}
+
+.activity__address-content-location {
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.activity__address-content-detail {
+  padding-top: 10px;
+  font-size: 13px;
+  color: #8a8a8a;
+  display: flex;
+  align-items: center;
+}
+
+.activity__address-content-detail-marker {
+  width: 20px;
+  height: 20px;
+}
+
+.activity__address-makephone {
+  width: 30px;
+  height: 30px;
+  padding: 7.5px 0 7.5px 15px;
+}
+
+.activity__footer {
+  width: 100%;
+  height: 50px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  z-index: 999;
+  background: #fff;
+  display: flex;
+}
+
+.activity__footer-history {
+  width: 50px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5px 0;
+}
+
+.activity__footer-history-icon {
+  width: 25px;
+  height: 25px;
+}
+
+.activity__footer-history-title {
+  font-size: 11px;
+}
+
+.activity__footer-submit {
+  background: #FF8264;
+  flex: 1;
+  color: #fff;
+  font-size: 18px;
+  text-align: center;
+  line-height: 2.8;
+  border-radius: 0;
+}

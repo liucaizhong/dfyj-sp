@@ -1,0 +1,38 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/personal/personal",
+    "pages/activity/activity",
+    "pages/myactivity/myactivity",
+    "pages/bindinfo/bindinfo",
+    "pages/checkin/checkin",
+    "pages/infocheck/infocheck"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#ef4d4a",
+    "navigationBarTitleText": "东方研究",
+    "navigationBarTextStyle": "white",
+    "backgroundColor": "#ef4d4a",
+    "backgroundTextStyle": "light"
+  },
+  "tabBar": {
+    "color": "#cdcdcd",
+    "selectedColor": "#000",
+    "borderStyle": "white",
+    "backgroundColor": "#fff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "全部活动",
+        "iconPath": "./assets/menu.png",
+        "selectedIconPath": "./assets/menu_selected.png"
+      },
+      {
+        "pagePath": "pages/personal/personal",
+        "text": "个人中心",
+        "iconPath": "./assets/person.png",
+        "selectedIconPath": "./assets/person_selected.png"
+      }
+    ]
+  }
+}

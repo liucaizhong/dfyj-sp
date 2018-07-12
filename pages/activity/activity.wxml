@@ -1,0 +1,44 @@
+<!--pages/activity/activity.wxml-->
+<!-- <scroll-view class="activity__container" scroll-y> -->
+  <form report-submit bindsubmit="apply">
+    <view class="activity__container">
+      <view class="activity__header">
+        <view class="activity__name">{{name}}</view>
+        <view class="activity__desc">{{desc}}</view>
+      </view>
+      <view class="activity__plan">
+        <view class="activity__plan-title">活动安排</view>
+        <view class="activity__plan-content">
+          <image class="activity__plan-image" src="{{content}}" mode="widthFix"></image>
+        </view>
+      </view>
+      <view class="activity__address">
+        <text class="activity__address-title">活动地址</text>
+        <view class="activity__address-content">
+          <view class="activity__address-content-left" bindtap="showMap">
+            <view class="activity__address-content-location">{{location}}</view>
+            <view class="activity__address-content-detail">
+              <image class="activity__address-content-detail-marker" src="../../assets/location.png"></image>
+              <text>{{address}}</text>
+            </view>
+          </view>
+          <!-- <view class="activity__address-content-right">
+            <image class="activity__address-makephone" src="../../assets/call.png" bindtap="makeCall"></image>
+          </view> -->
+        </view>
+      </view>
+    </view>
+    <view class="activity__footer">
+      <navigator class="activity__footer-history" url="../myactivity/myactivity">
+        <image class="activity__footer-history-icon" src="../../assets/history.png"></image>
+        <text class="activity__footer-history-title">报名历史</text>
+      </navigator>
+      <!-- <view class="activity__footer-submit" bindtap="apply">{{btnStatusDesc}}</view> -->
+      <button
+        class="activity__footer-submit"
+        formType="submit"
+        disabled="{{ infoStatus === 1 || status === 2 }}"
+      >{{btnStatusDesc}}</button>
+    </view>
+  </form>
+<!-- </scroll-view> -->

@@ -1,0 +1,35 @@
+<!--pages/bindinfo/bindinfo.wxml-->
+<form class="bindinfo" bindsubmit="submitInfo" bindreset="resetInfo">
+  <view class="content">
+    <view class="row">
+      <text class="label">姓名</text>
+      <input class="input" name="name" placeholder="填写真实姓名" disabled="{{!update}}" focus="{{update}}" value="{{name}}"></input>
+    </view>
+    <view class="row">
+      <text class="label">公司</text>
+      <input class="input" name="comp" placeholder="填写所在公司" disabled="{{!update}}" value="{{comp}}"></input>
+    </view>
+    <view class="row">
+      <text class="label">职务</text>
+      <input class="input" name="title" placeholder="填写最高职务" disabled="{{!update}}" value="{{title}}"></input>
+    </view>
+    <view class="row">
+      <text class="label">手机</text>
+      <button wx:if="{{!phone && update}}" class="bindPhone" type="primary" open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber">授权绑定</button>
+      <input wx:else class="input" name="phone" type="number" placeholder="填写常用手机号" disabled value="{{phone}}"></input> 
+    </view>
+  </view>
+  <view wx:if="{{update}}" class="btn-area">
+     <!-- <button
+      class="auth-btn"
+      wx:if="{{!hasUserInfo && canIUse}}"
+      open-type="getUserInfo"
+      bindgetuserinfo="getUserInfo"
+    >授权用户信息</button>  -->
+    <button class="submit-btn" type="primary" formType="submit">提交</button>
+    <button class="reset-btn" type="warn" formType="reset">取消</button> 
+  </view>
+  <view wx:else>
+    <view class="update-btn" bindtap="updateInfo">更改信息</view>
+  </view>
+</form>

@@ -1,0 +1,9 @@
+{
+  "enablePullDownRefresh": true,
+  "onReachBottomDistance": 50,
+  "usingComponents": {
+    "search-page": "../search/search",
+    "activity-card": "../activitycard/activitycard",
+    "loadmore": "../loadmore/loadmore"
+  }
+}

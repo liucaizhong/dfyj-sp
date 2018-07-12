@@ -1,0 +1,6 @@
+<!--pages/infocheck/infocheck.wxml-->
+<view class="infocheck">
+  <icon class="infocheck-icon" type="waiting" size="80"></icon>
+  <text class="infocheck-text">信息审核中</text>
+  <text class="infocheck-subtext">只有个人信息审核完成之后，方可报名参加活动。</text>
+</view>

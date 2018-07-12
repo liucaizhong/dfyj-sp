@@ -1,0 +1,6 @@
+page {
+  font-size: 16px;
+  font-family: -apple-system-font,Helvetica Neue,Helvetica,sans-serif;
+  height: 100%;
+  background: #F9F9F9; 
+}

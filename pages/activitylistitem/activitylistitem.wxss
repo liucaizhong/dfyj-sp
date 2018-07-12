@@ -1,0 +1,68 @@
+/* pages/activitylistitem/activitylistitem.wxss */
+.activitylistitem__container {
+  box-sizing: border-box;
+  width: 100%;
+  padding-top: 15px;
+  height: auto;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  /* box-shadow: #cdcdcd .5px .5px 1px; */
+}
+
+.activitylistitem__name {
+  box-sizing: border-box;
+  width: 100%;
+  display: block;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden; 
+  font-size: 14px;
+  font-weight: bold;
+  height: auto;
+  margin-bottom: 10px;
+  padding: 0 15px;
+}
+
+.activitylistitem__address {
+  box-sizing: border-box;
+  padding: 0 15px;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.activitylistitem__interval {
+  box-sizing: border-box;
+  padding: 0 15px;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.activitylistitem__footer {
+  box-sizing: border-box;
+  padding: 5px 15px;
+  height: 30px;
+  border-top: 1px solid rgba(226,234,240,1);
+  display: flex;
+  justify-content: flex-end;
+  color: #bfbfbf;
+}
+
+.activitylistitem__status {
+  box-sizing: border-box;
+  font-size: 13px;
+  color: #bfbfbf;
+}
+
+.activitylistitem__status:not(:last-child) {
+  margin-right: 10px;
+}
+
+.activitylistitem__qrcode {
+  box-sizing: border-box;
+  padding: 0 7px;
+  font-size: 13px;
+  color: #FF8264;
+  border: 1px solid #FF8264;
+}

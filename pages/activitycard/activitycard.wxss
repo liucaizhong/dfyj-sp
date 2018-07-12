@@ -1,0 +1,76 @@
+/* pages/activitycard/activitycard.wxss */
+.activitycard__container {
+  box-sizing: border-box;
+  min-width: 300px;
+  min-height: 120px;
+  background: #fff;
+  border-radius: 10px;
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  box-shadow: #cdcdcd .5px .5px 1px;
+}
+
+.activitycard__name {
+  width: 100%;
+  display: block;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden; 
+  font-size: 16px;
+  font-weight: bold;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.activitycard__content {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  align-items: stretch;
+}
+
+.activitycard__content-left {
+  flex: 1;
+  margin-right: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.activitycard__address {
+  flex: 1;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.activitycard__interval {
+  font-size: 14px;
+  height: 20px;
+  color: #8a8a8a;
+}
+
+.activitycard__content-right {
+  width: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center;
+}
+
+.activitycard__enroll {
+  font-size: 13px;
+  color: #8a8a8a;
+  margin-bottom: 5px;
+}
+
+.activitycard__status {
+  box-sizing: border-box;
+  background: #FF8264;
+  font-size: 13px;
+  color: #fff;
+  padding: 5px 10px;
+  text-align: center;
+  width: 70px;
+}

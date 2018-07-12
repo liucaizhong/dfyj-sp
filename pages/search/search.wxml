@@ -1,0 +1,37 @@
+<!--pages/search/search.wxml-->
+<view class="search">
+  <view class="search__header">
+    <input
+      class="search__input"
+      placeholder="输入活动名称、地点"
+      focus
+      confirm-type="search"
+      bindconfirm="confirm"
+      bindinput="change"
+      value="{{searchVal}}"
+    />
+    <text class="search__cancel" bindtap="cancel">取消</text>
+  </view>
+  <view class="search__result">
+    <view wx:if="{{!searchResult.length && searchVal}}" class="search__result-none">没有找到相关活动</view>
+    <view wx:else class="search__result-body">
+      <text class="search__result-item" wx:for="{{searchResult}}" wx:key="{{index}}" bindtap="navToActivity" data-id="{{item.id}}">{{item.name}}</text>
+    </view>
+  </view> 
+  <view wx:if="{{searchHistory.length && showSearchHistory}}" class="search__history">
+    <view class="search__history-header">搜索历史</view>
+    <!-- <view class="search__history-body" wx:for="{{searchHistory}}" wx:key="{{index}}">
+      <view class="search__history-body-item" bindtap="tapSearchHistoryItem" data-item="{{item.content}}">{{item.content}}</view>
+    </view> -->
+    <view class="search__history-body">
+      <view
+        class="search__history-body-item"
+        bindtap="tapSearchHistoryItem"
+        data-item="{{item.content}}"
+        wx:for="{{searchHistory}}"
+        wx:key="{{index}}"
+      >{{item.content}}</view>
+    </view>
+    <view class="search__history-footer" bindtap="clear">清除搜索历史</view>
+  </view>
+</view>

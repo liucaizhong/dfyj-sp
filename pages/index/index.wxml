@@ -1,0 +1,48 @@
+<!--index.wxml-->
+ <!-- <view class="index__container">  -->
+  <!-- <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view> -->
+  <search-page wx:if="{{showSearch}}" bind:cancel="cancelSearch" data="{{activities}}">
+  </search-page>
+  <scroll-view wx:else class="index__scroll-view" scroll-y>
+    <view class="index__back"></view>
+    <view class="index__header">
+      <view class="index__header-content">
+        <view class="index__input" bindtap="focusSearch">
+          <icon class="index__input-search-icon" type="search" color="#dbdbdb" size="16"/>
+          <text class="index__input-placeholder">输入活动名称、地点</text>
+        </view>
+        <image class="index__camera" src="../../assets/camera.png" bindtap="scanCode" />
+      </view>
+    </view>
+    <view class="index__content">
+      <activity-card class="index__activitycard" wx:key="id" wx:for="{{activities}}" item="{{item}}" />
+      <loadmore class="index__loadmore" loading="{{loadmore}}" />
+    </view>
+    <!-- <view class="index__add-btn" bindtap="addActivity">
+      <image class="index__add-icon" src="../../assets/add.png" />
+    </view> -->
+  </scroll-view>
+
+  <!-- <view class="weui-msg">
+    <view class="weui-msg__icon-area">
+      <icon type="warn" size="93"></icon>
+    </view>
+    <view class="weui-msg__text-area">
+      <view class="weui-msg__title">授权失败</view>
+      <view class="weui-msg__desc">必须授权用户信息方可使用东方研究活动平台。</view>
+      <view class="weui-msg__desc">可点击下方按钮允许授权。</view>
+    </view>
+    <view class="weui-msg__opr-area">
+      <view class="weui-btn-area">
+        <button class="weui-btn" type="primary" open-type="getUserInfo" bindgetuserinfo="getUserInfo">授权用户信息</button>
+      </view>
+    </view>
+  </view> -->
+
+ <!-- </view>  -->

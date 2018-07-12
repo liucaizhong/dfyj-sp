@@ -1,0 +1,14 @@
+<!--pages/activitycard/activitycard.wxml-->
+<view class="activitycard__container" bindtap="navigateToDetail">
+  <view class="activitycard__name">{{item.name}}</view>
+  <view class="activitycard__content">
+    <view class="activitycard__content-left">
+      <view class="activitycard__address">{{item.address}}</view>
+      <view class="activitycard__interval">{{oneDay ? item.start : item.start + ' 至 ' + item.end}}</view>
+    </view>
+    <view class="activitycard__content-right">
+      <view class="activitycard__enroll">{{item.enroll + '人已报名'}}</view>
+      <view class="activitycard__status">{{statusDesc[item.status || 0]}}</view>
+    </view>
+  </view>
+</view>
